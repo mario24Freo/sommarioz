@@ -20,9 +20,12 @@
 #' single.entries <- JAC12463.eg3$Entry [ JAC12463.eg3$colour.entry %in% 'blue']
 #' duplicate.entries <- JAC12463.eg3$Entry [ JAC12463.eg3$colour.entry %in% 'black']
 #' standard.entries <- JAC12463.eg3$Entry [ JAC12463.eg3$colour.entry %in% 'red']
-#' mydata <- with(JAC12463.eg3,
-#' tapply(Entry,list(as.numeric(Row),as.numeric(Column)),FUN=identity))
-#' mydata.df <- as.data.frame(mydata)
+#' #just duplicates and check varieties
+#' mydata <- JAC12463.eg3[
+#'   !(as.character(JAC12463.eg3$Entry) %in% single.entries), ]
+#' mydata.table <- with(mydata,
+#'   tapply(as.character(Entry),list(as.numeric(Row),as.numeric(Column)),FUN=identity))
+#' mydata.df <- as.data.frame(mydata.table)
 #' ans.table <- gt.2waytable.soz(mydata.df,
 #'               list(duplicate.entries,standard.entries),
 #'               my.decorate=c('underline',NA),
@@ -45,7 +48,7 @@ gt.2waytable.soz =function(mydata.df,entry.groups=list(3),
 
 
 mytable=gt::gt(mydata.df,rownames_to_stub = TRUE)
-mytable = gt::sub_missing(mytable,missing_text = "")
+mytable = gt::sub_missing(mytable,missing_text = missing.cell)
 mytable=gt::tab_header(mytable,
                        title = my.title,
                        subtitle = my.subtitle)
