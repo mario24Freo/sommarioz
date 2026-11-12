@@ -12,7 +12,7 @@ used in the case-studies of the e-book (Biometry:The 5Rs).
 
 ## Installation
 
-ou can install the development version of sommarioz from
+You can install the development version of sommarioz from
 [GitHub](https://github.com/mario24Freo/sommarioz) with:
 
 ``` r
