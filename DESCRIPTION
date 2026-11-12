@@ -1,0 +1,21 @@
+Package: sommarioz
+Title: Functions to be used with the e-book "Biometry:The 5Rs"
+Version: 0.1.0
+Authors@R: 
+    person(given=c("Mario","F."), family= "D'Antuono", email= "mario24Freo@gmail.com", role = c("aut", "cre"))
+Description: This package supports the case-studies in the e-book "Biometry:The 5Rs".
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Depends: 
+    R (>= 3.5)
+LazyData: true
+Config/roxygen2/version: 8.1.1
+Imports: 
+    gt,
+    gtExtras,
+    magrittr,
+    Rdpack
+RdMacros: Rdpack
+Suggests: 
+    webshot2
