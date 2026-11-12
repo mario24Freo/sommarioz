@@ -10,7 +10,8 @@ gt.2waytable.soz(
   my.decorate = NULL,
   my.colours = c("blue", "black", "red"),
   my.title = "my title",
-  my.subtitle = "subtitle"
+  my.subtitle = "subtitle",
+  missing.cell = ""
 )
 }
 \arguments{
@@ -28,6 +29,8 @@ So we could have c(NA,"underline" NA)to underline the second entry group in the 
 \item{my.title}{A character with a title (default="title")}
 
 \item{my.subtitle}{A character with a subtitle (default ="subtitle")}
+
+\item{missing.cell}{A character. Default ="". You can choose "-".}
 }
 \value{
 mytable. A 2-way table of class gt_tbl().
