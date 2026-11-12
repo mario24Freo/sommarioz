@@ -12,6 +12,7 @@
 #' @param my.colours A list of colours for each entry corresponding to the entry subsets
 #' @param my.title A character with a title (default="title")
 #' @param my.subtitle A character with a subtitle (default ="subtitle")
+#' @param missing.cell A character. Default ="". You can choose "-". 
 #' @return mytable. A 2-way table of class gt_tbl().
 #' @examples
 #' library(gt);library(gtExtras)
@@ -38,13 +39,13 @@ gt.2waytable.soz =function(mydata.df,entry.groups=list(3),
                             my.decorate=NULL,
                              my.colours=c('blue','black','red') ,
                              my.title='my title',
-                             my.subtitle=
-                                "subtitle")
+                             my.subtitle="subtitle",
+                             missing.cell ="")
 { #start of function
 
 
 mytable=gt::gt(mydata.df,rownames_to_stub = TRUE)
-
+mytable = gt::sub_missing(mytable,missing_text = "")
 mytable=gt::tab_header(mytable,
                        title = my.title,
                        subtitle = my.subtitle)
