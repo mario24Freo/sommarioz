@@ -28,4 +28,16 @@ JAC12463.eg3
 \description{
 JAC12463.eg3 p-rep design
 }
+\examples{
+# check A-efficiency of the design as per paper, should be 0.411
+library(dae)
+str(JAC12463.eg3)
+unit.trt.canon <- dae::designAnatomy(formulae =
+  list(unit=~ Row+Column+Row:Column, trt=~ Entry),
+  data = JAC12463.eg3)
+summ1<- summary(unit.trt.canon, which.criteria = c("aeff","eeff","order"))
+summ2 <- summary(unit.trt.canon, which.criteria = c("aeff","eeff","order"), labels.swap = TRUE)
+print(summ1)
+print(summ2)
+}
 \keyword{datasets}

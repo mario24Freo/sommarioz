@@ -24,4 +24,16 @@ Clarke2010
 \description{
 Clarke et al. (2010) fictitious p-rep design
 }
+\examples{
+# check A-efficiency of the design
+library(dae)
+str(Clarke2010)
+unit.trt.canon <- dae::designAnatomy(formulae =
+  list(unit=~ Row+Column+Row:Column, trt=~ Entry),
+  data = Clarke2010)
+summ1<- summary(unit.trt.canon, which.criteria = c("aeff","eeff","order"))
+summ2 <- summary(unit.trt.canon, which.criteria = c("aeff","eeff","order"), labels.swap = TRUE)
+print(summ1)
+print(summ2)
+}
 \keyword{datasets}

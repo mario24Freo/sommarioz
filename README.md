@@ -13,7 +13,7 @@ used in the case-studies of the e-book (Biometry:The 5Rs).
 The link to the e-book is
 <http://mario24freo.github.io/Biometry_The_5Rs> which is in a
 draft/development phase and version 1 is planned to be released on
-Decmber 1, 2026.
+December 1, 2026.
 
 ## Installation
 

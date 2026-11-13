@@ -10,4 +10,15 @@
 #'   \item{colour.entry}{colour to use for text in cell}
 #' }
 #' @source \insertRef{Clarke2010}{sommarioz}
+#' @examples
+#' # check A-efficiency of the design
+#' library(dae)
+#' str(Clarke2010)
+#' unit.trt.canon <- dae::designAnatomy(formulae =
+#'   list(unit=~ Row+Column+Row:Column, trt=~ Entry),
+#'   data = Clarke2010)
+#' summ1<- summary(unit.trt.canon, which.criteria = c("aeff","eeff","order"))
+#' summ2 <- summary(unit.trt.canon, which.criteria = c("aeff","eeff","order"), labels.swap = TRUE)
+#' print(summ1)
+#' print(summ2)
 "Clarke2010"
