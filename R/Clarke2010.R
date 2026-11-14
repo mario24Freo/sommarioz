@@ -4,9 +4,13 @@
 #' \describe{
 #'   \item{Row}{Row number (factor)}
 #'   \item{Column}{Column number (factor)}
-#'   \item{Entry}{Entry code (factor)}
-#'   \item{RowBlock}{Row-block number}
-#'   \item{ColumnBlock}{Row-block number}
+#'   \item{Entry}{Entry codes with text (factor)}
+#'   \item{Treatment}{Numeric value for Entry codes (factor)}
+#'   \item{RowBlock}{Row-block number (factor)}
+#'   \item{ColumnBlock}{Column-block number (factor)}
+#'   \item{Standard}{If a standard variety. A text. "yes" or "no"}
+#'   \item{Control}{If a variety. A text. "S1" or "S2" or "0"}
+#'   \item{Lines}{Numeric. 1-12 test lines and 0, if a control S1 or S2. }
 #'   \item{colour.entry}{colour to use for text in cell}
 #' }
 #' @source \insertRef{Clarke2010}{sommarioz}
