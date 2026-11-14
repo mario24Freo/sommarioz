@@ -7,10 +7,10 @@
 
 <!-- badges: end -->
 
-The most important function in \$ is the **summary()** function. So, if
-one fits any statistical model or generates a near-optimal statistical
-design, the one should summarise the model or the design with
-appropriate summary measures.
+The most important function in $\textsf{R}$ is the **summary()**
+function. So, if one fits any statistical model or generates a
+near-optimal statistical design, the one should summarise the model or
+the design with appropriate summary measures.
 
 The Italian word for *summary* is *sommario*!
 
