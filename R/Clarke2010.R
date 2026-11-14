@@ -21,4 +21,5 @@
 #' summ2 <- summary(unit.trt.canon, which.criteria = c("aeff","eeff","order"), labels.swap = TRUE)
 #' print(summ1)
 #' print(summ2)
+#' # can we do a better design with odw R package
 "Clarke2010"
