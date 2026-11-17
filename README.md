@@ -9,8 +9,8 @@
 
 The most important function in $\textsf{R}$ is the **summary()**
 function. So, if one fits any statistical model or generates a
-near-optimal statistical design, the one should summarise the model or
-the design with appropriate summary measures.
+near-optimal statistical design, the one should summarize the model or
+the design with appropriate statistical measures.
 
 The Italian word for *summary* is *sommario*!
 
@@ -21,6 +21,10 @@ The link to the e-book is
 <http://mario24freo.github.io/Biometry_The_5Rs> which is in a
 draft/development phase and version 1 is planned to be released on
 December 1, 2026.
+
+Also, under construction is the other e-book :
+<http://mario24freo.github.io/PizzaRioZ> and version 1 is also planned
+to be released on December 1, 2026.
 
 ## Installation
 
