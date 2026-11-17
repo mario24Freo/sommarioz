@@ -2,6 +2,7 @@
 
 export(gt.2waytable.soz)
 export(gt.add.lines.2waytable.soz)
+export(sommarioz)
 importFrom(Rdpack,reprompt)
 importFrom(gt,
   cell_borders,

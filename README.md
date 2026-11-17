@@ -9,8 +9,8 @@
 
 The most important function in $\textsf{R}$ is the **summary()**
 function. So, if one fits any statistical model or generates a
-near-optimal statistical design, the one should summarize the model or
-the design with appropriate statistical measures.
+near-optimal statistical design, then one should summarize the model or
+the design with the appropriate statistical measures.
 
 The Italian word for *summary* is *sommario*!
 
@@ -25,6 +25,12 @@ December 1, 2026.
 Also, under construction is the other e-book :
 <http://mario24freo.github.io/PizzaRioZ> and version 1 is also planned
 to be released on December 1, 2026.
+
+Please note, that since the arrival of AI agents such as “Claudio”
+(claude-ai pro), it is sometimes more efficient to ask Claudio to
+construct some R functions. These are identified with the suffix (.cai)
+and my functions that I have written are identified by the suffix
+(.soz).
 
 ## Installation
 

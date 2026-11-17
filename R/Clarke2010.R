@@ -22,8 +22,6 @@
 #'   list(unit=~ Row+Column+Row:Column, trt=~ Entry),
 #'   data = Clarke2010)
 #' summ1<- summary(unit.trt.canon, which.criteria = c("aeff","eeff","order"))
-#' summ2 <- summary(unit.trt.canon, which.criteria = c("aeff","eeff","order"), labels.swap = TRUE)
 #' print(summ1)
-#' print(summ2)
-#' # can we do a better design with odw R package
+#' # can we do a better design with another R package?
 "Clarke2010"

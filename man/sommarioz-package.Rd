@@ -2,7 +2,6 @@
 % Please edit documentation in R/sommarioz-package.R
 \docType{package}
 \name{sommarioz-package}
-\alias{sommarioz}
 \alias{sommarioz-package}
 \title{My sommarioz package}
 \description{
